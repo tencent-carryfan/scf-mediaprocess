@@ -87,9 +87,6 @@ function checkConfig(config) {
     if (!config) {
         return false;
     }
-    if (!config.stat) {
-        config.stat = {};
-    }
     if (config.stat.enable && !config.appId) {
         return false;
     }
@@ -112,6 +109,9 @@ function main_handler(event, context, callback, cusConfig) {
                 case 0:
                     if (cusConfig) {
                         config = cusConfig;
+                    }
+                    if (!config.stat) {
+                        config.stat = {};
                     }
                     _b.label = 1;
                 case 1:

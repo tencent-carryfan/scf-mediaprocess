@@ -59,10 +59,7 @@ function checkConfig(config) {
         return false;
     }
 
-    if(!config.stat){
-        config.stat = {};
-    }
-
+  
     if(config.stat.enable && !config.appId){
         return false;
 
@@ -84,7 +81,10 @@ export async function main_handler(event, context, callback, cusConfig) {
         config = cusConfig;
     }
 
- 
+    if(!config.stat){
+        config.stat = {};
+    }
+
     try{
         if (config.type == "output") {
             //日志收集

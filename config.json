@@ -22,5 +22,5 @@
         "level":"EACH"
     },
     "DEBUG":false,
-    "PROXY":"http://proxy.tencent.com:8080"
+    "PROXY":""
 }
