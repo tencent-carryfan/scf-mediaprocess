@@ -1,0 +1,26 @@
+{
+    "SecretId":"",
+    "SecretKey":"",   
+    "param":{
+        "output":{
+            "bucket":"testout0511",
+            "dir":"/output/"
+        },
+        "mediaProcess":{
+            "transcode":{
+                "definition":[20]
+            }
+        }
+    },
+
+    "appId":"",
+    "type":"input",
+    "region":"ap-beijing",
+    "stat":{
+        "enable":false,
+        "path":"log",
+        "level":"EACH"
+    },
+    "DEBUG":false,
+    "PROXY":"http://proxy.tencent.com:8080"
+}
